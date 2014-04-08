@@ -9,7 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential git cmake 
     libzip-dev libboost-all-dev lua5.1 liblua5.1-0-dev libluabind-dev libluajit-5.1-dev wget
 
 RUN mkdir -p /build && mkdir -p /data
-RUN git clone git://github.com/DennisOSRM/Project-OSRM.git /src
+RUN git clone https://github.com/DennisOSRM/Project-OSRM.git /src
 
 WORKDIR /build
 RUN cmake /src
